@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>淡蓝的小站-主页</title>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
+    <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
+    <script src="js/index.js"></script>
+    <script src="jq/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="weather/css/style.css">
+    <link rel="stylesheet" href="clock/css/clock.css">
+    <script>
+        function bgRegiser() {
+            alert("你好，注册失败，等到站长找到女盆友就能注册了");
+        }
+
+        // function bgExit() {
+        //     alert("我已经看到“害怕.jpg”了，确定要关闭页面吗");
+        // }
+
+        function bgExit() {
+            if (confirm("我已经看到“害怕.jpg”了，确定要关闭页面吗")) {
+                window.opener = null;
+                window.open('', '_self');
+                window.close();
+            } else {}
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <div class="blog-big">
+        <div class="blog-head">
+            <nav class="navbar navbar-expand-sm bg-ex navbar-light">
+                <a id="logo" class="navbar-brand" href="index.html">淡蓝的小站</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav ulex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">主页</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">日志</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="photo.html">摄影集</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="software.html">软件推荐</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kms.html">KMS服务器</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">关于淡蓝</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <form class="form-inline">
+                    <input class="form-control" type="text" placeholder="女朋友">
+                    <button class="btn btn-success" type="button" onclick="window.open('https://www.baidu.com/s?wd=%E7%89%A7%E6%BF%91%E7%BA%A2%E8%8E%89%E6%A0%96')">点击寻找</button>
+                </form>
+            </nav>
+        </div>
+        <div class="card bg-ex register">
+
+            <form>
+                <div class="card-header">
+                    <h2>注册蓝粉</h2>
+                </div>
+                <div class="zhuce">
+                    <div class="form-group">
+                        <label for="username">用户名</label>
+                        <input type="text" class="form-control" id="userneme">
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="pwd">密码</label>
+                        <input type="password" class="form-control" id="pwd">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd2">确认密码</label>
+                        <input type="password" class="form-control" id="pwd2">
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">手机号码</label>
+                        <input type="text" class="form-control" id="tel">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">邮箱</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <div>性别</div>
+                        <label class="radio-inline">
+                            <input type="radio" name="sex">男</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="sex">女</label>
+                        <label class="radio-inline">
+                            <input type="radio" name="sex">中性</label>
+                    </div>
+
+                    <div class="form-check r">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox">我已阅读并同意
+                            <a href="#" data-toggle="modal" data-target="#xieyi">《淡蓝的小站-用户协议》</a>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="card-footer r">
+                    <button type="submit" class="btn btn-primary" onclick="bgRegiser()">注册</button>
+                    <button type="button" class="btn btn-warning" onclick="bgExit()">害怕且不注册</button>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <p>未经许可，不得转载本站的所有信息及作品&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+            <p>Copyright&nbsp;©&nbsp;1996-2018&nbsp;淡蓝的小站&nbsp;All&nbsp;Rights&nbsp;Reserved.</p>
+            <address>
+                <p class="lianxi">如有问题，请联系我：</p>
+                <a href="mailto:qas87@danlan.me">qas87@danlan.me</a>
+            </address>
+        </footer>
+    </div>
+    <!-- 模态框 -->
+    <div class="modal fade" id="xieyi">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- 模态框头部 -->
+                <div class="modal-header">
+                    <h4 class="modal-title">用户协议</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- 模态框主体 -->
+                <div class="modal-body">
+                    <p>富强 民主 文明 和谐</p>
+                    <p>自由 平等 公正 法治</p>
+                    <p>爱国 敬业 诚信 友善</p>
+                </div>
+
+                <!-- 模态框底部 -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">已阅读</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

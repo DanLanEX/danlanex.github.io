@@ -5,27 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>淡蓝的小站-主页</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>淡蓝的小站-日志</title>
+    <link rel="stylesheet" type="text/css" href="css/blog.css">
     <link rel="stylesheet" href="bootstrap4/css/bootstrap.min.css">
     <script src="js/index.js"></script>
     <script src="jq/jquery-3.3.1.min.js"></script>
     <script src="popper/popper.min.js"></script>
     <script src="bootstrap4/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="weather/css/style.css">
     <link rel="stylesheet" href="clock/css/clock.css">
     <script>
-        function noLogin()
-        {
+        function noLogin() {
             alert("后端暂未完工，登录不可用，喵喵喵");
         }
-        </script>
+    </script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="10">
     <div class="blog-big">
         <div class="blog-head">
-            <nav class="navbar navbar-expand-sm bg-ex navbar-light">
+            <nav id="navmain" class="navbar navbar-expand-sm bg-ex navbar-light">
+
                 <a id="logo" class="navbar-brand" href="index.html">淡蓝的小站</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -33,10 +34,10 @@
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav ulex">
                         <li class="nav-item">
-                            <a class="nav-link active nownav" href="index.html">主页</a>
+                            <a class="nav-link" href="index.html">首页</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="blog.html">日志</a>
+                            <a class="nav-link active nownav" href="blog.html">日志</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="photo.html">摄影集</a>
@@ -61,69 +62,134 @@
         </div>
 
         <div class="blog-main">
-            <article class="card bg-ex blog-index1">
-                <div class="card-body">
-                    <h2><a class="astyle" href="photo.html">摄影集</a></h2>
-                    <div id="iphoto" class="carousel slide" data-ride="carousel">
 
-                        <!-- 指示符 -->
-                        <ul class="carousel-indicators">
-                            <li data-target="#iphoto" data-slide-to="0" class="active"></li>
-                            <li data-target="#iphoto" data-slide-to="1"></li>
-                            <li data-target="#iphoto" data-slide-to="2"></li>
-                            <li data-target="#iphoto" data-slide-to="3"></li>
-                        </ul>
+            <div class="blog-list card-body">
 
-                        <!-- 轮播图片 -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <a href="photo.html"><img src="img/index1.jpg"></a>
+                <div class="container-fluid">
+                    <div class="row">
+                        <nav class="col-sm-3 col-4" id="myScrollspy">
+                            <ul id="ul2" class="nav nav-pills flex-column">
+
+
+                                <div class="dropdown">
+                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                        2018年
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">2018年</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item disabled" href="#">更早？不存在的😂</a>
+                                    </div>
+                                </div>
+
+
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#s6">6月</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#s5">5月</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#s4">4月</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#s3">3月</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#s2">2月</a>
+                                </li>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#s1">1月</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#top" style="background: rgb(255, 255, 0); ">↑返回页顶↑</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="col-sm-9 col-8">
+                            <div id="s6" class="card bg-blog1">
+                                <div class="card-header"><a class="astyle" href="essay.html">淡蓝的小站V2.0正式上线</a></div>
+                                <div class="card-body">淡蓝的小站2.0正式上线啦，目前本站有提供KMS激活服务，欢迎大家常来玩呀。</div>
+                                <div class="card-footer">
+                                    <span style="color: rgb(50, 200, 200)">淡蓝EX</span>
+                                    <span style="display: inline-block; float: right">2018年6月29日</span>
+                                </div>
+
+
                             </div>
-                            <div class="carousel-item">
-                                <a href="photo.html"><img src="img/index2.jpg"></a>
+                            <div id="s5" class="card bg-blog1">
+                                <div class="card-header"><a class="astyle" href="essay2.html">第一篇文章</a></div>
+                                <div class="card-body">Hello Word！测试测试，Test，Test。</div>
+                                <div class="card-footer">
+                                    <span style="color: rgb(50, 200, 200)">淡蓝EX</span>
+                                    <span style="display: inline-block; float: right">2018年5月1日</span>
+                                </div>
                             </div>
-                            <div class="carousel-item">
-                                <a href="photo.html"><img src="img/index3.jpg"></a>
+                            <div id="s4" class="card bg-blog1">
+
+                                <div class="card-header">4月某日志标题</div>
+                                <div class="card-body">某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。</div>
+                                <div class="card-footer">
+                                    <span style="color: rgb(50, 200, 200)">淡蓝EX</span>
+                                    <span style="display: inline-block; float: right">2018年4月1日</span>
+                                </div>
+
                             </div>
-                            <div class="carousel-item">
-                                <a href="photo.html"><img src="img/index4.jpg"></a>
+                            <div id="s3" class="card bg-blog1">
+                                <div class="card-header">3月某日志标题</div>
+                                <div class="card-body">某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。</div>
+                                <div class="card-footer">
+                                    <span style="color: rgb(50, 200, 200)">淡蓝EX</span>
+                                    <span style="display: inline-block; float: right">2018年3月1日</span>
+                                </div>
                             </div>
+                            <div id="s2" class="card bg-blog1">
+
+                                <div class="card-header">2月某日志标题</div>
+                                <div class="card-body">某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。</div>
+                                <div class="card-footer">
+                                    <span style="color: rgb(50, 200, 200)">淡蓝EX</span>
+                                    <span style="display: inline-block; float: right">2018年2月1日</span>
+                                </div>
+
+                            </div>
+                            <div id="s1" class="card bg-blog1">
+                                <div class="card-header">1月某日志标题</div>
+                                <div class="card-body">某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。</div>
+                                <div class="card-footer">
+                                    <span style="color: rgb(50, 200, 200)">淡蓝EX</span>
+                                    <span style="display: inline-block; float: right">2018年1月29日</span>
+                                </div>
+                            </div>
+                            <div id="s1" class="card bg-blog1">
+
+                                <div class="card-header">1月某日志标题</div>
+                                <div class="card-body">某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。</div>
+                                <div class="card-footer">
+                                    <span style="color: rgb(50, 200, 200)">淡蓝EX</span>
+                                    <span style="display: inline-block; float: right">2018年1月19日</span>
+                                </div>
+
+                            </div>
+                            <div id="s1" class="card bg-blog1">
+                                <div class="card-header">1月某日志标题</div>
+                                <div class="card-body">某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。某日志节选。。。</div>
+                                <div class="card-footer">
+                                    <span style="color: rgb(50, 200, 200)">淡蓝EX</span>
+                                    <span style="display: inline-block; float: right">2018年1月9日</span>
+                                </div>
+                            </div>
+
+
                         </div>
-
-                        <!-- 左右切换按钮 -->
-                        <a class="carousel-control-prev" href="#iphoto" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a class="carousel-control-next" href="#iphoto" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                        </a>
-
                     </div>
                 </div>
-            </article>
-            <article class="card bg-ex blog-index2">
-                <div class="card-body">
-                    <h2><a class="astyle" href="blog.html">日志</a></h2>
-                    <div class="card ba">
-                        <div class="card-header">
-                            <h4><a class="astyle" href="essay.html">淡蓝的小站V2.0正式上线</a></h4>
-                        </div>
-                        <div class="card-body">
-                            <p>淡蓝的小站2.0正式上线啦，目前本站有提供KMS激活服务，欢迎大家常来玩呀。</p>
-                        </div>
-                        <div class="card-footer">2018年6月29日<div class="readspan"><a class="astyle" href="essay.html">点击阅读</a></div></div>
-                    </div>
-                    <div class="card ba blog2">
-                        <div class="card-header">
-                            <h4><a class="astyle" href="essay2.html">第一篇文章</a></h4>
-                        </div>
-                        <div class="card-body">
-                            <p>Hello Word！测试测试，Test，Test。</p>
-                        </div>
-                        <div class="card-footer">2018年5月1日<div class="readspan"><a class="astyle" href="essay2.html">点击阅读</a></div></div>
-                    </div>
-                </div>
-            </article>
+            </div>
+
             <div class="card bg-ex blog-dl">
                 <form>
                     <div class="form-group">
@@ -138,12 +204,11 @@
                         <label class="form-check-label">
                             <input class="form-check-input" type="checkbox">记住我</label>
                     </div>
-                    <button type="submit" class="btn btn-primary dlbtn" onclick="noLogin()">登录</button>
-                    <button type="submit" class="btn btn-secondary zcbtn"  formaction="" onclick="window.open('register.html')">注册</button>
+                    <button type="submit" class="btn btn-primary dlbtn" onclick="noLogin()">提交</button>
+                    <button type="submit" class="btn btn-secondary zcbtn" formaction="" onclick="window.open('register.html')">注册</button>
                 </form>
             </div>
-            <!-- <div class="card bg-primary blog-tq">天气
-                <div class="card-body"> -->
+
             <div class="blog-tq">
                 <div class="background">
                     <div class="container">
@@ -225,8 +290,7 @@
 
                 <script src="weather/js/index.js"></script>
             </div>
-            <!-- </div>
-            </div> -->
+
             <div class=" blog-rq">
                 <div style="text-align:center;clear:both;">
                     <script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
@@ -335,7 +399,7 @@
             </div>
 
 
-           
+
         </div>
 
         <footer>
@@ -346,7 +410,9 @@
                 <a href="mailto:qas87@danlan.me">qas87@danlan.me</a>
             </address>
         </footer>
+        <div class="zhanwei"></div>
     </div>
+
 
 
 </body>
